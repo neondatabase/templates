@@ -11,7 +11,7 @@
 	$: cms = template?.cms
 	$: publisher = template?.publisher
 	$: overview = template?.overview
-	$: demoUrl = template?.demoUrl
+	$: templateImageUrl = template?.templateImageUrl
 	$: githubUrl = template?.githubUrl
 	$: blurImageURL = template?.blurImageURL
 </script>
@@ -87,9 +87,9 @@
 			{/if}
 		</div>
 		<div class="flex w-full flex-col md:w-2/3 md:border-l md:pl-10">
-			{#if demoUrl && name && demoUrl.length > 0 && name.length > 0}
+			{#if templateImageUrl && name && templateImageUrl.length > 0 && name.length > 0}
 				<img
-					src={demoUrl}
+					src={templateImageUrl}
 					alt={'Thumbnail - ' + name}
 					class="aspect-video w-full rounded object-cover shadow md:mt-24"
 					style={blurImageURL && `background-image: url(${blurImageURL}); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;`}

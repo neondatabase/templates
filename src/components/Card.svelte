@@ -2,7 +2,7 @@
 	class Item {
 		name: string
 		slug: string
-		demoUrl: string
+		templateImageUrl: string
 		publisher: string
 		description: string
 		blurDataURL?: string
@@ -18,7 +18,7 @@
 		<a href={'/t/' + item.slug} class="group flex flex-col overflow-hidden rounded bg-white shadow-md duration-300 hover:shadow-2xl md:max-w-sm">
 			<img
 				alt={item.name}
-				src={(item.demoUrl)}
+				src={item.templateImageUrl}
 				loading={index && index < 1 ? 'eager' : 'lazy'}
 				fetchpriority={index && index < 1 ? 'high' : 'low'}
 				class="aspect-video w-full transform-gpu object-cover transition will-change-auto"

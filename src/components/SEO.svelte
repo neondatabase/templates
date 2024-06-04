@@ -4,13 +4,13 @@
 	import { getDescription, getDomain, getTitle } from '@/src/utils'
 
 	function getOGImageURL(data: Seo) {
-		if (!data) return (getDomain())
+		if (!data) return getDomain()
 		if (data?.image) return data.image
 		const { domain = getDomain(), description = getDescription() } = data
 		let initialOGImage = new URL('/og', domain)
 		initialOGImage.searchParams.set('text', encodeURIComponent(getTitle()))
 		initialOGImage.searchParams.set('description', encodeURIComponent(getDescription(description)))
-		initialOGImage.searchParams.set('image', encodeURIComponent((getDomain(domain))))
+		initialOGImage.searchParams.set('image', encodeURIComponent(getDomain(domain)))
 		return initialOGImage.toString()
 	}
 

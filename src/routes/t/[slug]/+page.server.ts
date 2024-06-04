@@ -28,7 +28,7 @@ export const load = async ({ url, params }) => {
 	const socialImage = new URL('/og', url.origin)
 	if (template.name) socialImage.searchParams.set('text', template.name)
 	if (template.description) socialImage.searchParams.set('description', template.description)
-	if (template.demoUrl) socialImage.searchParams.set('image', (template.demoUrl))
+	if (template.templateImageUrl) socialImage.searchParams.set('image', template.templateImageUrl)
 
 	// Create SEO Object
 	const seo = {
@@ -37,7 +37,7 @@ export const load = async ({ url, params }) => {
 		domain: url.origin,
 		pathname: url.pathname,
 		image: socialImage.toString(),
-		preloads: template?.demoUrl ? [{ url: (template.demoUrl), as: 'image' }] : []
+		preloads: template?.templateImageUrl ? [{ url: template.templateImageUrl, as: 'image' }] : []
 	}
 
 	return {

@@ -1,7 +1,7 @@
 type Template = {
 	name: string
 	slug: string
-	demoUrl: string
+	templateImageUrl: string
 	overview?: string
 	githubUrl: string
 	publisher: string
@@ -19,7 +19,7 @@ export const templates: Template[] = [
 		publisher: 'Neon',
 		description: 'Get started with Node.js and Neon in seconds.',
 		framework: ['Node.js'],
-		demoUrl: 'https://github.com/neondatabase/examples/tree/main/with-nextjs-server-components',
+		templateImageUrl: 'https://neon.tech/images/social-previews/index.jpg',
 		type: ['Starter'],
 		css: ['TailwindCSS'],
 		cms: [],

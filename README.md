@@ -51,7 +51,7 @@ You can deploy your own hosted version of these templates using the button below
 
 This repository is created by [Neon](https://neon.tech) with contributions from:
 
-- Rishi Raj Jain ([@rishi_raj_jain_](https://twitter.com/rishi_raj_jain_))
+- Rishi Raj Jain ([@rishi*raj_jain*](https://twitter.com/rishi_raj_jain_))
 
 ## Contributing
 
