@@ -3,7 +3,7 @@
 	"name": "templates",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "vite build && cp -r markdowns .vercel/output/functions/fn.func/markdowns",
 		"preview": "vite preview",
 		"format": "prettier --plugin-search-dir . --write .",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
