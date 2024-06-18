@@ -18,11 +18,12 @@
 			<div class="relative bg-[#0b0c10] px-4 py-2">
 				{#if item.publisher === 'Neon'}
 					<div class="absolute bottom-0 right-0 z-50 m-2 rounded-full bg-white/50 p-2">
-						<img src="https://cdn.svgporn.com/logos/neon-icon.svg" class="size-[20px]" loading="lazy" alt="Neon" />
+						<img decoding="async" src="https://cdn.svgporn.com/logos/neon-icon.svg" class="size-[20px]" loading="lazy" alt="Neon" />
 					</div>
 				{/if}
 				<img
 					alt={item.name}
+					decoding="async"
 					loading={index && index < 1 ? 'eager' : 'lazy'}
 					fetchpriority={index && index < 1 ? 'high' : 'low'}
 					src={`https://neon.tech/docs/og?title=${btoa(item.name)}`}
@@ -39,7 +40,7 @@
 				<div class="flex flex-row items-center text-sm font-light text-gray-500 gap-x-1">
 					<span>by</span>
 					{#if item.publisher === 'Neon'}
-						<img src="https://cdn.svgporn.com/logos/neon-icon.svg" class="size-[12px]" loading="lazy" alt="Neon" />
+						<img decoding="async" src="https://cdn.svgporn.com/logos/neon-icon.svg" class="size-[12px]" loading="lazy" alt="Neon" />
 					{/if}
 					<span>{item.publisher}</span>
 				</div>
