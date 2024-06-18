@@ -62,10 +62,6 @@ export const load = async ({ url }) => {
 		}
 	}
 
-	if (filteredTemplates?.length > 0) {
-		seo['preloads'] = [{ url: filteredTemplates[0].templateImageUrl, as: 'image' }]
-	}
-
 	return {
 		seo,
 		templates: filteredTemplates

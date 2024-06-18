@@ -2,7 +2,6 @@
 	class Item {
 		name: string
 		slug: string
-		templateImageUrl: string
 		publisher: string
 		description: string
 		blurDataURL?: string
@@ -18,9 +17,9 @@
 		<a href={'/t/' + item.slug} class="group flex flex-col overflow-hidden rounded bg-white shadow-md duration-300 hover:shadow-2xl md:max-w-sm">
 			<img
 				alt={item.name}
-				src={item.templateImageUrl}
 				loading={index && index < 1 ? 'eager' : 'lazy'}
 				fetchpriority={index && index < 1 ? 'high' : 'low'}
+				src={`https://neon.tech/docs/og?title=${btoa(item.name)}`}
 				class="aspect-video w-full transform-gpu object-cover transition will-change-auto"
 				style={item.blurDataURL && `background-image: url(${item.blurDataURL}); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;`}
 			/>

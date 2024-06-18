@@ -110,7 +110,7 @@
 
 <div class="z-10 mt-24 flex w-full flex-col sm:items-center">
 	<h1 class="px-10 text-4xl font-bold text-black sm:text-center md:text-6xl">Find your Template</h1>
-	<h2 class="mt-5 px-10 text-2xl font-light text-gray-800 sm:text-center md:max-w-full">Jumpstart your app development process with our pre-built solutions.</h2>
+	<h2 class="mt-5 px-10 text-2xl font-light text-gray-800 sm:text-center md:max-w-full">Jumpstart your app development process with pre-built solutions from Neon and our community.</h2>
 	<div class="mt-12 flex w-full flex-col items-start px-10 sm:mt-24 sm:flex-row lg:max-w-6xl xl:px-0">
 		<div class="hide-if-not-script-available flex w-full min-w-[250px] flex-col sm:w-[300px]">
 			<span class="text-md font-semibold text-black"> Filter Templates </span>
@@ -145,7 +145,7 @@
 				<div class="hidden flex-col sm:flex">
 					{#each Object.keys(types) as head}
 						{#if types.hasOwnProperty(head) && types[head].length > 0}
-							<span class="text-md mt-5 border-b border-black pb-2 font-semibold text-black">{head}</span>
+							<span class="text-md mt-5 border-b pb-2 font-semibold text-black">{head}</span>
 							{#each types[head] as child, childIndex}
 								<button
 									on:click={() => {

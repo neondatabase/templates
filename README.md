@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://neon.tech/templates">
-    <img alt="Neon Templates - Jumpstart your app development process with our pre-built solutions." src="">
+    <img alt="Neon Templates - Jumpstart your app development process with pre-built solutions from Neon and our community." src="">
     <h1 align="center">Neon Templates</h1>
   </a>
 </p>
 
 <p align="center">
-  Neon Templates - Jumpstart your app development process with our pre-built solutions.
+  Neon Templates - Jumpstart your app development process with pre-built solutions from Neon and our community.
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 
 ## Introduction
 
-Neon Templates - Jumpstart your app development process with our pre-built solutions.
+Neon Templates - Jumpstart your app development process with pre-built solutions from Neon and our community.
 
 Built with [SvelteKit](https://kit.svelte.dev), [Vercel](https://vercel.com), and [TailwindCSS](https://tailwindcss.com).
 

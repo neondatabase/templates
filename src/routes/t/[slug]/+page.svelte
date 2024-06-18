@@ -11,7 +11,6 @@
 	$: cms = template?.cms
 	$: publisher = template?.publisher
 	$: overview = template?.overview
-	$: templateImageUrl = template?.templateImageUrl
 	$: githubUrl = template?.githubUrl
 	$: blurImageURL = template?.blurImageURL
 </script>
@@ -71,29 +70,19 @@
 				</div>
 			{/if}
 			{#if githubUrl && githubUrl.length > 0}
-				<div class="flex flex-row flex-wrap items-center justify-between">
-					<a aria-label="Deploy To Neon" href={`https://console.neon.tech/deploy?repo=${githubUrl}`} target="_blank" class="mt-8 flex flex-row items-center gap-x-3">
-						<span> Deploy to</span> <img height="20" width="20" alt="Deploy To Neon" loading="lazy" src="https://cdn.svgporn.com/logos/neon-icon.svg" />
-					</a>
-					<a
-						target="_blank"
-						href={githubUrl}
-						aria-label="View Repo URL"
-						class="mt-8 w-full rounded border bg-white px-6 py-2 text-center text-sm duration-300 hover:border-black sm:w-auto"
-					>
-						View Repo
-					</a>
-				</div>
+				<a
+					target="_blank"
+					href={githubUrl}
+					aria-label="View Repo URL"
+					class="mt-8 w-full rounded border bg-white px-6 py-2 text-center text-sm duration-300 hover:border-black sm:w-auto"
+				>
+					View Repo
+				</a>
 			{/if}
 		</div>
 		<div class="flex w-full flex-col md:w-2/3 md:border-l md:pl-10">
-			{#if templateImageUrl && name && templateImageUrl.length > 0 && name.length > 0}
-				<img
-					src={templateImageUrl}
-					alt={'Thumbnail - ' + name}
-					class="aspect-video w-full rounded object-cover shadow md:mt-24"
-					style={blurImageURL && `background-image: url(${blurImageURL}); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;`}
-				/>
+			{#if name?.length > 0}
+				<img alt={'Thumbnail - ' + name} src={`https://neon.tech/docs/og?title=${btoa(name)}`} class="aspect-video w-full rounded object-cover shadow md:mt-24" />
 			{/if}
 			{#if overview && overview.length > 0}
 				<div class="prose my-8">

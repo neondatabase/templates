@@ -14,7 +14,7 @@ export function getTitle(val?: string) {
 }
 
 export function getDescription(val?: string) {
-	return val ?? 'Jumpstart your app development process with our pre-built solutions.'
+	return val ?? 'Jumpstart your app development process with pre-built solutions from Neon and our community.'
 }
 
 export function getDomain(val?: string) {
