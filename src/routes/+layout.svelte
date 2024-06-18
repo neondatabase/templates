@@ -8,7 +8,7 @@
 
 <Seo />
 
-<div class="relative flex min-h-screen w-full flex-col bg-white">
+<div class="relative flex min-h-screen w-full flex-col bg-white pb-24">
 	{#if Boolean($navigating) && $navigating?.to?.url.pathname.includes('/t/')}
 		<Detail />
 	{:else if Boolean($navigating) && $navigating?.from?.url.pathname !== '/' && $navigating?.to?.url.pathname === '/'}

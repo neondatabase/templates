@@ -13,6 +13,61 @@ type Template = {
 
 export const templates: Template[] = [
 	{
+		name: 'Chat with PDF',
+		slug: 'chat-with-pdf',
+		publisher: 'Neon',
+		description: 'A full-featured, hackable Next.js Chat with PDF chatbot built with OpenAI and LlamaIndex.',
+		framework: ['Next.js', 'LlamaIndex'],
+		type: ['Starter', 'Chatbot'],
+		css: ['TailwindCSS'],
+		cms: [],
+		githubUrl: 'https://github.com/neondatabase/examples/tree/main/ai/llamaindex/chat-with-pdf-nextjs'
+	},
+	{
+		name: 'AI Chatbot',
+		slug: 'ai-chatbot',
+		publisher: 'Neon',
+		description: 'A full-featured, hackable Next.js AI chatbot build with OpenAI and LlamaIndex.',
+		framework: ['Next.js', 'LlamaIndex'],
+		type: ['Starter', 'Chatbot'],
+		css: ['TailwindCSS'],
+		cms: [],
+		githubUrl: 'https://github.com/neondatabase/examples/tree/main/ai/llamaindex/chatbot-nextjs'
+	},
+	{
+		name: 'RAG Chatbot',
+		slug: 'rag-chatbot',
+		publisher: 'Neon',
+		description: 'A full-featured, hackable Next.js RAG chatbot build with OpenAI and LlamaIndex.',
+		framework: ['Next.js', 'LlamaIndex'],
+		type: ['Starter', 'Chatbot'],
+		css: ['TailwindCSS'],
+		cms: [],
+		githubUrl: 'https://github.com/neondatabase/examples/tree/main/ai/llamaindex/rag-nextjs'
+	},
+	{
+		name: 'Semantic Search Chatbot',
+		slug: 'semantic-search-chatbot',
+		publisher: 'Neon',
+		description: 'A full-featured, hackable Next.js Semantic Search chatbot build with OpenAI and LlamaIndex.',
+		framework: ['Next.js', 'LlamaIndex'],
+		type: ['Starter', 'Chatbot'],
+		css: ['TailwindCSS'],
+		cms: [],
+		githubUrl: 'https://github.com/neondatabase/examples/tree/main/ai/llamaindex/semantic-search-nextjs'
+	},
+	{
+		name: 'Reverse Image Search',
+		slug: 'reverse-image-search',
+		publisher: 'Neon',
+		description: 'A full-featured, hackable Next.js Reverse Image Search Engine build with OpenAI and LlamaIndex.',
+		framework: ['Next.js', 'LlamaIndex'],
+		type: ['Starter', 'Engine'],
+		css: ['TailwindCSS'],
+		cms: [],
+		githubUrl: 'https://github.com/neondatabase/examples/tree/main/ai/llamaindex/reverse-image-search-nextjs'
+	},
+	{
 		name: 'Astro Boilerplate',
 		slug: 'astro-boilerplate',
 		publisher: 'Neon',
