@@ -68,16 +68,29 @@
 					</span>
 				</div>
 			{/if}
-			{#if githubUrl && githubUrl.length > 0}
-				<a
-					target="_blank"
-					href={githubUrl}
-					aria-label="View Repo URL"
-					class="mt-8 w-full rounded border bg-white px-6 py-2 text-center text-sm duration-300 hover:border-black sm:w-auto"
-				>
-					View Repo
-				</a>
-			{/if}
+			<div class="flex w-full flex-col lg:flex-row justify-between">
+				{#if githubUrl && githubUrl.length > 0}
+					<div class="mt-8 flex flex-col gap-y-8">
+						<a href={`https://vercel.com/new/clone?repository-url=${githubUrl}&env=DATABASE_URL`}>
+							<img src="https://vercel.com/button" alt="Deploy with Vercel" loading="lazy" />
+						</a>
+						<a href={`https://app.netlify.com/start/deploy?repository=${githubUrl}#DATABASE_URL`}>
+							<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" loading="lazy" />
+						</a>
+						<a href={`https://render.com/deploy?repo=${githubUrl}#DATABASE_URL`}>
+							<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" loading="lazy" />
+						</a>
+					</div>
+					<a
+						target="_blank"
+						href={githubUrl}
+						aria-label="View Repo URL"
+						class="mt-8 rounded border h-max bg-white px-6 py-2 text-center text-sm duration-300 hover:border-black sm:w-auto"
+					>
+						View Repo
+					</a>
+				{/if}
+			</div>
 		</div>
 		<div class="flex w-full flex-col md:w-2/3 md:border-l md:pl-10">
 			{#if name?.length > 0}

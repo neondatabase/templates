@@ -22,9 +22,6 @@
 				<span class="w-[100px] animate-pulse bg-gray-400 py-1 text-gray-600" />
 			</div>
 			<div class="flex flex-row flex-wrap items-center justify-between">
-				<div class="mt-8 flex flex-row items-center gap-x-3">
-					<span> Deploy to</span> <img height="20" width="20" alt="Deploy To Neon" loading="lazy" src="https://cdn.svgporn.com/logos/neon-icon.svg" />
-				</div>
 				<div class="mt-8 w-full rounded border bg-white px-6 py-2 text-center text-sm duration-300 hover:border-black sm:w-auto">View Repo</div>
 			</div>
 		</div>
