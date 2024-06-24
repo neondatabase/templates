@@ -35,7 +35,7 @@ export const load = async ({ url, params }) => {
 		description: template.description,
 		domain: url.origin,
 		pathname: url.pathname,
-		image: socialImage.toString(),
+		image: socialImage.toString()
 	}
 
 	return {

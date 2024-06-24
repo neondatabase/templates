@@ -37,7 +37,7 @@
 				</p>
 			</div>
 			<div class="mt-auto flex flex-row items-center justify-between p-3">
-				<div class="flex flex-row items-center text-sm font-light text-gray-500 gap-x-1">
+				<div class="flex flex-row items-center gap-x-1 text-sm font-light text-gray-500">
 					<span>by</span>
 					{#if item.publisher === 'Neon'}
 						<img decoding="async" src="https://cdn.svgporn.com/logos/neon-icon.svg" class="size-[12px]" loading="lazy" alt="Neon" />
