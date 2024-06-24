@@ -275,5 +275,38 @@ export const templates: Template[] = [
 		css: ['TailwindCSS'],
 		cms: [],
 		githubUrl: 'https://github.com/neondatabase/examples/tree/main/with-waku'
+	},
+	{
+		name: 'Angular Boilerplate',
+		slug: 'angular-boilerplate',
+		publisher: 'Neon',
+		description: 'Get started with Angular and Neon in seconds.',
+		framework: ['Angular'],
+		type: ['Starter'],
+		css: [],
+		cms: [],
+		githubUrl: 'https://github.com/neondatabase/examples/tree/main/with-angular'
+	},
+	{
+		name: 'Wasp Boilerplate',
+		slug: 'wasp-boilerplate',
+		publisher: 'Neon',
+		description: 'Get started with Wasp and Neon in seconds.',
+		framework: ['Wasp'],
+		type: ['Starter'],
+		css: [],
+		cms: [],
+		githubUrl: 'https://github.com/neondatabase/examples/tree/main/with-wasp'
+	},
+	{
+		name: 'Analog Boilerplate',
+		slug: 'analog-boilerplate',
+		publisher: 'Neon',
+		description: 'Get started with Analog and Neon in seconds.',
+		framework: ['Analog'],
+		type: ['Starter'],
+		css: [],
+		cms: [],
+		githubUrl: 'https://github.com/neondatabase/examples/tree/main/with-analog'
 	}
 ]
