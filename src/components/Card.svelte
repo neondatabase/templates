@@ -26,8 +26,8 @@
 					decoding="async"
 					loading={index && index < 1 ? 'eager' : 'lazy'}
 					fetchpriority={index && index < 1 ? 'high' : 'low'}
-					src={`https://neon.tech/docs/og?title=${btoa(item.name)}`}
 					class="aspect-video w-full transform-gpu object-cover transition will-change-auto"
+					src={`https://neon.tech/docs/og?title=${btoa(item.name)}&breadcrumb=${btoa('Templates')}`}
 				/>
 			</div>
 			<div class="flex flex-col p-3">

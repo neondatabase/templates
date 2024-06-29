@@ -95,7 +95,7 @@
 		<div class="flex w-full flex-col md:w-2/3 md:border-l md:pl-10">
 			{#if name?.length > 0}
 				<div class="bg-[#0b0c10] px-5 py-3 md:mt-24">
-					<img alt={'Thumbnail - ' + name} src={`https://neon.tech/docs/og?title=${btoa(name)}`} class="aspect-video w-full rounded object-cover shadow" />
+					<img alt={'Thumbnail - ' + name} src={`https://neon.tech/docs/og?title=${btoa(name)}&breadcrumb=${btoa('Templates')}`} class="aspect-video w-full rounded object-cover shadow" />
 				</div>
 			{/if}
 			{#if overview && overview.length > 0}
