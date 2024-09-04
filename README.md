@@ -55,3 +55,4 @@ We love contributions! Here's how you can contribute:
 - [Open an issue](https://github.com/neondatabase/templates/issues) if you believe you've encountered a bug.
 - Make a [pull request](https://github.com/neondatabase/templates/pull) to add new features, make improvements, or fix bugs.
 
+Disclaimer: We offer no guarantee of support of the templates in this repository though aim to do our best to prioritize, delete and accept them.
